@@ -45,14 +45,3 @@ class ValidaCPF {
   }
 }
 
-/*let validacpf = new ValidaCPF("070.987.720-03");
-
-if(validacpf.valida()){
-    console.log("CPF Valido");
-}
-else{
-    console.log("CPF Invalido");
-}*/
-
-//705.484.450-52
-//070.987.720-03
