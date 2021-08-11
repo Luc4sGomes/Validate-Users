@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(240, 75, 103);
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: whitesmoke;
+    height: 680px;
+    width: 500px;
+    margin: 12px auto;
+    border-radius: 12px;
+    padding: 12px;
+    animation: smooth 4s;
+
+}
+
+.keep-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-top: 6px;
+
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-top: 20px;
+}
+
+form input,button{
+    width: 70%;
+    padding: 6px;
+}
+
+form input{
+    border: none;
+    outline: 0;
+    border-radius: 8px;
+    background-color: rgb(243, 114, 135);
+    font-size: 12px;
+    text-align: center;
+    animation: move 1s;
+    animation-fill-mode:backwards;
+}
+
+form label{
+    margin: 4px 4px;
+}
+
+#btn{
+    margin-top: 16px;
+    background-color:rgb(243, 114, 135);
+    border: none;
+    border-radius: 8px;
+    transition: 200ms all ease-in-out;
+    animation: move 1s;
+}
+
+#btn:hover{
+    background-color: black;
+}
+
+@keyframes smooth{
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+
+    }
+}
+
+@keyframes move{
+    from{
+        transform: translateX(-30%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.mover-sobre{
+    color: whitesmoke;
+}
+
+.error-text{
+    font-size: 12px;
+    color: red;
+}
+
+.input{
+    transition: 400ms all ease-in-out;
+}
